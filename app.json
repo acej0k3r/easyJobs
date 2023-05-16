@@ -4,7 +4,34 @@
     "web": {
       "bundler": "metro"
     },
-    "name": "my-app",
-    "slug": "my-app"
-  }
+    "name": "easyjobs",
+    "slug": "easyjobs",
+    "version": "1.0.0",
+    "package": "com.acejokerstudio.easyjobs",
+    "extra": {
+      "eas": {
+        "projectId": "6c39bb76-152d-4d12-b75a-7fab280c207a"
+      }
+    },
+    "android": {
+      "package": "com.acejokerstudio.easyjobs"
+    }
+  },
+  "android": {
+    "package": "com.acejokerstudio.easyjobs",
+    "versionCode": 1,
+    "permissions": [
+      "android.permission.READ_EXTERNAL_STORAGE",
+      "android.permission.RECORD_AUDIO"
+    ]
+  },
+  "plugins": [
+    [
+      "expo-image-picker",
+      {
+        "photosPermission": "The app Easy Jobs accesses your photos to let you share them with your friends.",
+        "cameraPermission": "The app Easy Jobs accesses your camera to allow real time photo input"
+      }
+    ]
+  ]
 }
